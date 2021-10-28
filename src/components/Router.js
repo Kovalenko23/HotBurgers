@@ -4,15 +4,15 @@ import Landing from './Landing'
 import NotFound from './NotFound';
 import App from './App'
 const Router = () => {
-    return(
+    return (
         <BrowserRouter>
-        <Switch>
-            <Route exact path ='/' component = {Landing}/>
-            <Route path ='/restaurant/:restaurantId' component={App}/>
-            <Route component = {NotFound}/>
-        </Switch>
+            <Switch>
+                <Route exact path='/' component={Landing} />
+                <Route path='/restaurant/:restaurantId' component={App} />
+                <Route component={NotFound} />
+            </Switch>
         </BrowserRouter>
     )
 }
 
-export default Router
+export default Router;
